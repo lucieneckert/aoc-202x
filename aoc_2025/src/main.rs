@@ -9,6 +9,7 @@ mod day03;
 mod day04;
 mod day05;
 mod day06;
+mod day07;
 
 type Solver = fn(BufReader<File>, parse::Part);
 
@@ -36,6 +37,7 @@ fn main() {
         (String::from("4"), day04::solve as Solver),
         (String::from("5"), day05::solve as Solver),
         (String::from("6"), day06::solve as Solver),
+        (String::from("7"), day07::solve as Solver),
     ]);
 
     let args = Args::parse();
